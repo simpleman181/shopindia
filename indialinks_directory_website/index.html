@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiaLinks - Your One-Stop Directory for Online Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>IndiaLinks</h1>
+            <p>Your One-Stop Directory for Online Services in India</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search for services, categories, or brands...">
+            <div class="search-icon">🔍</div>
+        </div>
+        
+        <div class="site-description">
+            <h2>Welcome to IndiaLinks</h2>
+            <p>IndiaLinks is your comprehensive directory of online services in India. Find all your favorite shopping sites, food delivery apps, travel bookings, and more - all in one place. Simply click on any logo to visit the service directly. No need to remember website addresses or search for services - everything you need is right here!</p>
+        </div>
+        
+        <div class="categories">
+            <!-- Online Shopping Category -->
+            <div class="category" data-category="shopping">
+                <div class="category-header">Online Shopping</div>
+                <div class="category-content">
+                    <a href="https://www.amazon.in" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" class="service-logo">
+                        <div class="service-name">Amazon</div>
+                    </a>
+                    <a href="https://www.flipkart.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/flipkart.com" alt="Flipkart" class="service-logo">
+                        <div class="service-name">Flipkart</div>
+                    </a>
+                    <a href="https://www.meesho.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/meesho.com" alt="Meesho" class="service-logo">
+                        <div class="service-name">Meesho</div>
+                    </a>
+                    <a href="https://www.myntra.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/myntra.com" alt="Myntra" class="service-logo">
+                        <div class="service-name">Myntra</div>
+                    </a>
+                    <a href="https://www.ajio.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/ajio.com" alt="AJIO" class="service-logo">
+                        <div class="service-name">AJIO</div>
+                    </a>
+                    <a href="https://www.snapdeal.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/snapdeal.com" alt="Snapdeal" class="service-logo">
+                        <div class="service-name">Snapdeal</div>
+                    </a>
+                    <a href="https://www.tatacliq.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/tatacliq.com" alt="Tata CLiQ" class="service-logo">
+                        <div class="service-name">Tata CLiQ</div>
+                    </a>
+                    <a href="https://www.nykaa.com/nykaa-fashion" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/nykaafashion.com" alt="Nykaa Fashion" class="service-logo">
+                        <div class="service-name">Nykaa Fashion</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="shopping">See More</div>
+            </div>
+            
+            <!-- Food Delivery Category -->
+            <div class="category" data-category="food">
+                <div class="category-header">Food Delivery</div>
+                <div class="category-content">
+                    <a href="https://www.zomato.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/zomato.com" alt="Zomato" class="service-logo">
+                        <div class="service-name">Zomato</div>
+                    </a>
+                    <a href="https://www.swiggy.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/swiggy.com" alt="Swiggy" class="service-logo">
+                        <div class="service-name">Swiggy</div>
+                    </a>
+                    <a href="https://www.eatsure.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/eatsure.com" alt="EatSure" class="service-logo">
+                        <div class="service-name">EatSure</div>
+                    </a>
+                    <a href="https://www.dominos.co.in" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/dominos.com" alt="Domino's" class="service-logo">
+                        <div class="service-name">Domino's</div>
+                    </a>
+                    <a href="https://www.pizzahut.co.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/pizzahut.com" alt="Pizza Hut" class="service-logo">
+                        <div class="service-name">Pizza Hut</div>
+                    </a>
+                    <a href="https://www.mcdelivery.co.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/mcdonalds.com" alt="McDonald's" class="service-logo">
+                        <div class="service-name">McDonald's</div>
+                    </a>
+                    <a href="https://www.faasos.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/faasos.com" alt="Faasos" class="service-logo">
+                        <div class="service-name">Faasos</div>
+                    </a>
+                    <a href="https://www.burgerking.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/burgerking.com" alt="Burger King" class="service-logo">
+                        <div class="service-name">Burger King</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="food">See More</div>
+            </div>
+            
+            <!-- Travel & Flights Category -->
+            <div class="category" data-category="travel">
+                <div class="category-header">Travel & Flights</div>
+                <div class="category-content">
+                    <a href="https://www.makemytrip.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/makemytrip.com" alt="MakeMyTrip" class="service-logo">
+                        <div class="service-name">MakeMyTrip</div>
+                    </a>
+                    <a href="https://www.goibibo.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/goibibo.com" alt="Goibibo" class="service-logo">
+                        <div class="service-name">Goibibo</div>
+                    </a>
+                    <a href="https://www.easemytrip.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/easemytrip.com" alt="EaseMyTrip" class="service-logo">
+                        <div class="service-name">EaseMyTrip</div>
+                    </a>
+                    <a href="https://www.ixigo.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/ixigo.com" alt="Ixigo" class="service-logo">
+                        <div class="service-name">Ixigo</div>
+                    </a>
+                    <a href="https://www.cleartrip.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/cleartrip.com" alt="Cleartrip" class="service-logo">
+                        <div class="service-name">Cleartrip</div>
+                    </a>
+                    <a href="https://www.yatra.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/yatra.com" alt="Yatra" class="service-logo">
+                        <div class="service-name">Yatra</div>
+                    </a>
+                    <a href="https://www.irctc.co.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/irctc.co.in" alt="IRCTC" class="service-logo">
+                        <div class="service-name">IRCTC</div>
+                    </a>
+                    <a href="https://www.airindia.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/airindia.com" alt="Air India" class="service-logo">
+                        <div class="service-name">Air India</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="travel">See More</div>
+            </div>
+            
+            <!-- Hotel Booking Category -->
+            <div class="category" data-category="hotels">
+                <div class="category-header">Hotel Booking</div>
+                <div class="category-content">
+                    <a href="https://www.oyorooms.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/oyorooms.com" alt="OYO" class="service-logo">
+                        <div class="service-name">OYO</div>
+                    </a>
+                    <a href="https://www.booking.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/booking.com" alt="Booking.com" class="service-logo">
+                        <div class="service-name">Booking.com</div>
+                    </a>
+                    <a href="https://www.agoda.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/agoda.com" alt="Agoda" class="service-logo">
+                        <div class="service-name">Agoda</div>
+                    </a>
+                    <a href="https://www.trivago.in" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/trivago.com" alt="Trivago" class="service-logo">
+                        <div class="service-name">Trivago</div>
+                    </a>
+                    <a href="https://www.airbnb.co.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/airbnb.com" alt="Airbnb" class="service-logo">
+                        <div class="service-name">Airbnb</div>
+                    </a>
+                    <a href="https://www.hotels.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/hotels.com" alt="Hotels.com" class="service-logo">
+                        <div class="service-name">Hotels.com</div>
+                    </a>
+                    <a href="https://www.expedia.co.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/expedia.com" alt="Expedia" class="service-logo">
+                        <div class="service-name">Expedia</div>
+                    </a>
+                    <a href="https://www.treebo.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/treebo.com" alt="Treebo" class="service-logo">
+                        <div class="service-name">Treebo</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="hotels">See More</div>
+            </div>
+            
+            <!-- Car Booking Category -->
+            <div class="category" data-category="cars">
+                <div class="category-header">Car Booking</div>
+                <div class="category-content">
+                    <a href="https://www.uber.com/in/en/" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/uber.com" alt="Uber" class="service-logo">
+                        <div class="service-name">Uber</div>
+                    </a>
+                    <a href="https://www.olacabs.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/olacabs.com" alt="Ola" class="service-logo">
+                        <div class="service-name">Ola</div>
+                    </a>
+                    <a href="https://www.rapido.bike" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/rapido.bike" alt="Rapido" class="service-logo">
+                        <div class="service-name">Rapido</div>
+                    </a>
+                    <a href="https://www.zoomcar.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/zoomcar.com" alt="Zoomcar" class="service-logo">
+                        <div class="service-name">Zoomcar</div>
+                    </a>
+                    <a href="https://www.revv.co.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/revv.co.in" alt="Revv" class="service-logo">
+                        <div class="service-name">Revv</div>
+                    </a>
+                    <a href="https://www.meru.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/meru.in" alt="Meru" class="service-logo">
+                        <div class="service-name">Meru</div>
+                    </a>
+                    <a href="https://www.savaari.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/savaari.com" alt="Savaari" class="service-logo">
+                        <div class="service-name">Savaari</div>
+                    </a>
+                    <a href="https://www.drivezy.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/drivezy.com" alt="Drivezy" class="service-logo">
+                        <div class="service-name">Drivezy</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="cars">See More</div>
+            </div>
+            
+            <!-- E-Pharmacy Category -->
+            <div class="category" data-category="pharmacy">
+                <div class="category-header">E-Pharmacy</div>
+                <div class="category-content">
+                    <a href="https://pharmeasy.in" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/pharmeasy.in" alt="PharmEasy" class="service-logo">
+                        <div class="service-name">PharmEasy</div>
+                    </a>
+                    <a href="https://www.netmeds.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/netmeds.com" alt="Netmeds" class="service-logo">
+                        <div class="service-name">Netmeds</div>
+                    </a>
+                    <a href="https://www.1mg.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/1mg.com" alt="1mg" class="service-logo">
+                        <div class="service-name">1mg</div>
+                    </a>
+                    <a href="https://www.apollopharmacy.in" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/apollopharmacy.in" alt="Apollo Pharmacy" class="service-logo">
+                        <div class="service-name">Apollo Pharmacy</div>
+                    </a>
+                    <a href="https://www.medlife.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/medlife.com" alt="Medlife" class="service-logo">
+                        <div class="service-name">Medlife</div>
+                    </a>
+                    <a href="https://www.medplusmart.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/medplusmart.com" alt="MedPlus" class="service-logo">
+                        <div class="service-name">MedPlus</div>
+                    </a>
+                    <a href="https://www.healthkart.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/healthkart.com" alt="HealthKart" class="service-logo">
+                        <div class="service-name">HealthKart</div>
+                    </a>
+                    <a href="https://www.myupchar.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/myupchar.com" alt="myUpchar" class="service-logo">
+                        <div class="service-name">myUpchar</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="pharmacy">See More</div>
+            </div>
+            
+            <!-- Beauty Products Category -->
+            <div class="category" data-category="beauty">
+                <div class="category-header">Beauty Products</div>
+                <div class="category-content">
+                    <a href="https://www.nykaa.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/nykaa.com" alt="Nykaa" class="service-logo">
+                        <div class="service-name">Nykaa</div>
+                    </a>
+                    <a href="https://in.sugarcosmetics.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/sugarcosmetics.com" alt="Sugar" class="service-logo">
+                        <div class="service-name">Sugar</div>
+                    </a>
+                    <a href="https://www.purplle.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/purplle.com" alt="Purplle" class="service-logo">
+                        <div class="service-name">Purplle</div>
+                    </a>
+                    <a href="https://www.myglamm.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/myglamm.com" alt="MyGlamm" class="service-logo">
+                        <div class="service-name">MyGlamm</div>
+                    </a>
+                    <a href="https://www.mamaearth.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/mamaearth.in" alt="Mamaearth" class="service-logo">
+                        <div class="service-name">Mamaearth</div>
+                    </a>
+                    <a href="https://www.plumgoodness.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/plumgoodness.com" alt="Plum" class="service-logo">
+                        <div class="service-name">Plum</div>
+                    </a>
+                    <a href="https://www.wowskinscience.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/wowskinscience.com" alt="WOW Skin Science" class="service-logo">
+                        <div class="service-name">WOW Skin Science</div>
+                    </a>
+                    <a href="https://themancompany.com" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/themancompany.com" alt="The Man Company" class="service-logo">
+                        <div class="service-name">The Man Company</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="beauty">See More</div>
+            </div>
+            
+            <!-- Grocery Delivery Category -->
+            <div class="category" data-category="grocery">
+                <div class="category-header">Grocery Delivery</div>
+                <div class="category-content">
+                    <a href="https://www.bigbasket.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/bigbasket.com" alt="BigBasket" class="service-logo">
+                        <div class="service-name">BigBasket</div>
+                    </a>
+                    <a href="https://www.jiomart.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/jiomart.com" alt="JioMart" class="service-logo">
+                        <div class="service-name">JioMart</div>
+                    </a>
+                    <a href="https://www.blinkit.com" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/blinkit.com" alt="Blinkit" class="service-logo">
+                        <div class="service-name">Blinkit</div>
+                    </a>
+                    <a href="https://www.zepto.in" target="_blank" class="service-item">
+                        <img src="https://logo.clearbit.com/zepto.in" alt="Zepto" class="service-logo">
+                        <div class="service-name">Zepto</div>
+                    </a>
+                    <a href="https://www.dmart.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/dmart.in" alt="DMart" class="service-logo">
+                        <div class="service-name">DMart</div>
+                    </a>
+                    <a href="https://www.spencers.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/spencers.in" alt="Spencer's" class="service-logo">
+                        <div class="service-name">Spencer's</div>
+                    </a>
+                    <a href="https://www.naturesbasket.co.in" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/naturesbasket.co.in" alt="Nature's Basket" class="service-logo">
+                        <div class="service-name">Nature's Basket</div>
+                    </a>
+                    <a href="https://www.swiggy.com/instamart" target="_blank" class="service-item hidden">
+                        <img src="https://logo.clearbit.com/swiggy.com" alt="Swiggy Instamart" class="service-logo">
+                        <div class="service-name">Swiggy Instamart</div>
+                    </a>
+                </div>
+                <div class="see-more" data-target="grocery">See More</div>
+            </div>
+        </div>
+        
+        <!-- Category Pages -->
+        <div id="shopping-page" class="category-page" data-category="shopping">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">Online Shopping</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+        
+        <div id="food-page" class="category-page" data-category="food">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">Food Delivery</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+        
+        <div id="travel-page" class="category-page" data-category="travel">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">Travel & Flights</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+        
+        <div id="hotels-page" class="category-page" data-category="hotels">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">Hotel Booking</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+        
+        <div id="cars-page" class="category-page" data-category="cars">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">Car Booking</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+        
+        <div id="pharmacy-page" class="category-page" data-category="pharmacy">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">E-Pharmacy</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+        
+        <div id="beauty-page" class="category-page" data-category="beauty">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">Beauty Products</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+        
+        <div id="grocery-page" class="category-page" data-category="grocery">
+            <div class="category-page-header">
+                <button class="back-button">← Back</button>
+                <h2 class="category-page-title">Grocery Delivery</h2>
+            </div>
+            <div class="category-page-content">
+                <!-- Content will be dynamically populated -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 IndiaLinks - Your One-Stop Directory for Online Services in India</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
