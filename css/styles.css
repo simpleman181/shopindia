@@ -1,20 +1,20 @@
-/* Main Styles for IndiaLinks Directory Website */
+/* Main Styles for Jump To Site Website */
 
 :root {
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
-    --secondary: #ec4899;
-    --accent: #8b5cf6;
-    --light: #f3f4f6;
-    --dark: #1f2937;
-    --success: #10b981;
-    --warning: #f59e0b;
-    --danger: #ef4444;
+    --primary: #0059d6;           /* Copilot Blue */
+    --primary-dark: #0040a3;      /* Darker shade */
+    --secondary: #9146ff;         /* Copilot Purple */
+    --accent: #00d084;            /* Copilot Green */
+    --light: #f3f4f6;             /* Light Gray */
+    --dark: #0d1117;              /* Copilot Background */
+    --success: #16c60c;           /* MS Green Accent */
+    --warning: #ffb900;           /* MS Yellow/Amber */
+    --danger: #d13438;            /* MS Red */
     --background: #ffffff;
-    --text: #374151;
-    --text-light: #9ca3af;
-    --border: #e5e7eb;
-    --shadow: rgba(0, 0, 0, 0.1);
+    --text: #374151;            
+    --text-light: #9ca3af;        /* Lighter Gray */
+    --border: #2d2d2d;            /* Subtle Dark Border */
+    --shadow: rgba(0, 0, 0, 0.3); /* Stronger shadow for dark BG */
 }
 
 * {
@@ -25,7 +25,7 @@
 }
 
 body {
-    background-color: var(--light);
+    background-color: var(--background);
     color: var(--text);
     line-height: 1.6;
 }
@@ -118,7 +118,7 @@ header {
 }
 
 .category-header {
-    background: linear-gradient(to right, var(--primary), var(--accent));
+    background: linear-gradient(to right, var(--primary), var(--secondary));
     color: white;
     padding: 20px;
     text-align: center;
@@ -156,7 +156,7 @@ header {
 }
 
 .service-item:hover {
-    background-color: rgba(99, 102, 241, 0.1);
+    background-color: rgba(0, 89, 214, 0.15);
     transform: translateY(-3px);
 }
 
@@ -306,4 +306,50 @@ footer {
     .category-page-content {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1100px;     /* Limits stretching, adjust as needed */
+  margin: 15px auto;     /* Centers the whole block */
+  padding: 16px 18px;    /* Adds internal gap from edges of window */
+  background: #fff;      /* Or your preferred color */
+  border-radius: 5px;   /* Soft corners (optional) */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Optional subtle shadow */
+}
+.logo-section {
+  min-width: 330px;
+  max-width: 360px;
+  text-align: center;
+}
+.logo-section img {
+  width: auto;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.logo-section p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+.site-description {
+  padding-left: 36px;
+  font-size: 16px;
+  color: #444;
+}
+@media (max-width: 900px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+  }
+  .site-description {
+    padding-left: 0;
+    padding-top: 2px;
+    text-align: center;
+  }
 }
