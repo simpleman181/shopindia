@@ -1287,42 +1287,12 @@
           opacity: 1;
         }
 </style>
-<!-- Buy Me a Coffee Widget -->
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="thevibingmoon" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting! If the content helped you in any way, you can buy me a coffee to support my work." data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
-<!-- CSS for Widget Tooltip on Hover -->
-<style>
-/* Add tooltip to BMC widget */
-    /* Style the BMC widget button to match old design */
-#bmc-wbtn {
-  background-color: #FFDD00 !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
-}
-
-#bmc-wbtn:hover {
-  background-color: #FFE84D !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3) !important;
-}
-
-#bmc-wbtn:hover::before {
-  content: "Thank you for visiting! If the content helped you in any way, you can buy me a coffee to support my work.";
-  position: absolute;
-  bottom: 70px;
-  right: 0;
-  background-color: #333;
-  color: #fff;
-  padding: 12px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  width: 280px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  z-index: 99999;
-  white-space: normal;
-  line-height: 1.4;
-}
-</style>
+<div class="bmc-tooltip">
+    <a href="https://buymeacoffee.com/thevibingmoon" target="_blank" class="bmc-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+        Buy me a coffee
+        </a>
+    <span class="bmc-tooltip-text">Thank you for visiting! If the content helped you in any way, you can buy me a coffee to support my work.</span>
+    </div>
 </body>
 </html>
