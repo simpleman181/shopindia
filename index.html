@@ -1293,6 +1293,19 @@
 <!-- CSS for Widget Tooltip on Hover -->
 <style>
 /* Add tooltip to BMC widget */
+    /* Style the BMC widget button to match old design */
+#bmc-wbtn {
+  background-color: #FFDD00 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
+}
+
+#bmc-wbtn:hover {
+  background-color: #FFE84D !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3) !important;
+}
+
 #bmc-wbtn:hover::before {
   content: "Thank you for visiting! If the content helped you in any way, you can buy me a coffee to support my work.";
   position: absolute;
