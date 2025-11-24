@@ -1232,71 +1232,68 @@
 <!-- Buy Me a Coffee Button -->
 <style>
 .bmc-button {
-  display: inline-flex;
-  align-items: center;
-  background-color: #FFDD00; /* BMC yellow */
-  color: #323232;
-  padding: 10px 18px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FFDD00;
+  color: #000000;
+  padding: 12px 24px;
   border-radius: 8px;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
   font-size: 16px;
-  border: 2px solid #e0c200;
-  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-
 .bmc-button:hover {
-  background-color: #f5cf00;
+  background-color: #FFE84D;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
-
-/* Tooltip container */
-.bmc-tooltip {
-  position: relative;
-  display: inline-block;
+.bmc-button svg {
+  width: 24px;
+  height: 24px;
 }
+    .bmc-tooltip {
+          position: relative;
+          display: inline-block;
+        }
 
-/* Tooltip text */
-.bmc-tooltip .bmc-tooltip-text {
-  visibility: hidden;
-  width: 260px;
-  background-color: #323232;
-  color: #fff;
-  text-align: center;
-  padding: 8px;
-  border-radius: 6px;
+    .bmc-tooltip-text {
+          visibility: hidden;
+          width: 280px;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 12px 16px;
+          position: absolute;
+          z-index: 10000;
+          bottom: 120%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+          font-size: 14px;
+          white-space: normal;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
 
-  position: absolute;
-  z-index: 1;
-  bottom: 130%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-/* Tooltip arrow */
-.bmc-tooltip .bmc-tooltip-text::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -6px;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #323232 transparent transparent transparent;
-}
-
-/* Show tooltip on hover */
-.bmc-tooltip:hover .bmc-tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
+    .bmc-tooltip:hover .bmc-tooltip-text {
+          visibility: visible;
+          opacity: 1;
+        }
 </style>
-
 <div class="bmc-tooltip">
-  <a href="https://buymeacoffee.com/thevibingmoon" target="_blank" class="bmc-button">
-    BMC
-  </a>
-  <span class="bmc-tooltip-text">Thank you for visiting! If the content helped you in any way, you can buy me a coffee to support my work.</span>
-</div>
+<a href="https://buymeacoffee.com/thevibingmoon" target="_blank" class="bmc-button">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+  Buy me a coffee
+</a>
+      <span class="bmc-tooltip-text">Thank you for visiting! If the content helped you in any way, you can buy me a coffee to support my work.</span>
+    </div>
+</body>
+</html>
